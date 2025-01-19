@@ -16,13 +16,14 @@ body{
     overflow: hidden;
 }
 .wrapper{
-    overflow: hidden;
+    /* overflow: hidden; */
     width: 1100px;
     height: 560px;
     display: grid;
     grid-template-columns: repeat(3,240px) 242px;
     grid-template-rows: 270px 260px;
     gap: 20px;
+    
 }
 .wrapper>div{
     padding: 30px;
@@ -31,6 +32,7 @@ body{
     flex-direction: column;
     justify-content: space-around;
     gap: 10px;
+    box-shadow: 13px 13px 11px 1px rgba(0, 0, 0, 0.056);
 }
 .one{
     background-color: hsl(263, 55%, 52%);
