@@ -26,7 +26,7 @@ body{
 }
 .wrapper>div{
     padding: 30px;
-    border-radius: 10px;
+    border-radius: 7px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -36,6 +36,9 @@ body{
     background-color: hsl(263, 55%, 52%);
     grid-row: span 1;
     grid-column: span 2;
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: right 20% top 0;
 }
 .two{
     grid-row: span 1;
@@ -100,4 +103,38 @@ p{
 }
 .three *,.five *{
     color: hsl(217, 19%, 35%)!important;
+}
+.wrapper .one,.wrapper .four{
+padding: 30px 0px 30px 30px;
+}
+.one p:last-of-type, .four p:last-of-type{
+padding-right: 41px;
+}
+@media (max-width:1100px){
+    body{
+        height: auto;
+        overflow-y: auto;
+    }
+    .wrapper{
+        width: 375px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+    }
+    .one p:first-of-type,.four p:first-of-type{
+        padding-right:39px ;
+    }
+    
+    /* p{
+        font-size: 13px;
+        line-height: 18px;
+        color: hsl(210, 46%, 95%);
+        opacity: 0.7;
+        font-weight: 400;
+        padding-right: 11px;
+    } */
+.one{
+    background-position: right 11% top -1%;
+}
 }
